@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlowBeauty — магазин косметики</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <h1>GlowBeauty</h1>
+        <p>Ваш улюблений кросплатформний б'юті-застосунок</p>
+    </div>
+</header>
+
+<main class="container main">
+    <!-- Опис застосунку -->
+    <section class="card">
+        <h2>Про застосунок</h2>
+        <p>
+            GlowBeauty — це сучасний онлайн-магазин для швидкого пошуку та замовлення декоративної і доглядової косметики.
+            Застосунок адаптований для роботи як на комп'ютерах, так і на мобільних пристроях.
+        </p>
+    </section>
+
+    <!-- Функції -->
+    <section class="card">
+        <h2>Основні функції</h2>
+        <ul class="features-list">
+            <li>Зручний пошук товарів за брендами та призначенням.</li>
+            <li>Формування особистого "Кошика бажань" (Wishlist).</li>
+            <li>Адаптивний інтерфейс для смартфонів.</li>
+            <li>Робота безпосередньо у браузері без встановлення.</li>
+        </ul>
+    </section>
+
+    <!-- Інтерактивна секція: Додавання товару -->
+    <section class="card">
+        <h2>Додати в кошик бажань</h2>
+        <input
+                type="text"
+                id="itemInput"
+                class="item-input"
+                placeholder="Наприклад: Туш для вій Maybelline"
+        >
+        <button id="addItemButton" class="button">
+            Додати товар
+        </button>
+        <p id="message" class="message"></p>
+    </section>
+
+    <!-- Список доданих товарів -->
+    <section class="card">
+        <h2>Ваш Wishlist</h2>
+        <ul id="itemsList" class="items-list"></ul>
+    </section>
+
+    <!-- Стек технологій -->
+    <section class="card">
+        <h2>Обраний стек технологій</h2>
+        <p>
+            Використано класичний підхід на базі вебтехнологій. Інтерфейс може працювати як самостійний вебсайт або бути вбудованим у мобільний додаток через WebView.
+        </p>
+        <table class="tech-table">
+            <thead>
+            <tr>
+                <th>Компонент</th>
+                <th>Технологія</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Структура сторінки</td>
+                <td>HTML</td>
+            </tr>
+            <tr>
+                <td>Стилізація та адаптивність</td>
+                <td>CSS</td>
+            </tr>
+            <tr>
+                <td>Логіка роботи кошика</td>
+                <td>JavaScript</td>
+            </tr>
+            <tr>
+                <td>Платформа запуску</td>
+                <td>Браузер / WebView</td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+</main>
+
+<footer class="footer">
+    <p>Лабораторна робота 1.2: GlowBeauty App</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

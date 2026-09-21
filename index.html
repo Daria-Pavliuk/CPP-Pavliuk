@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Портфоліо лабораторних робіт | Дар'я Павлюк</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #d1497b;
+      --secondary-color: #e07a9e;
+      --bg-color: #f8fafc;
+      --text-main: #1e293b;
+      --text-muted: #64748b;
+      --card-bg: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .header {
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      color: white;
+      padding: 60px 0 50px;
+      text-align: center;
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 30px;
+      box-shadow: 0 10px 30px rgba(209, 73, 123, 0.2);
+    }
+
+    .profile-badge {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+      padding: 6px 16px;
+      border-radius: 20px;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      margin-bottom: 16px;
+    }
+
+    .header h1 {
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      letter-spacing: -0.5px;
+    }
+
+    .header p {
+      font-size: 18px;
+      opacity: 0.9;
+      font-weight: 400;
+    }
+
+    .main {
+      padding: 50px 0;
+    }
+
+    .lab-list {
+      list-style: none;
+    }
+
+    .lab-list li {
+      margin-bottom: 20px;
+    }
+
+    .lab-link {
+      display: flex;
+      flex-direction: column;
+      background: var(--card-bg);
+      border-radius: 16px;
+      padding: 24px;
+      text-decoration: none;
+      color: var(--text-main);
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+      border: 1px solid rgba(0, 0, 0, 0.04);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .lab-link:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 25px -5px rgba(209, 73, 123, 0.1), 0 10px 10px -5px rgba(209, 73, 123, 0.04);
+      border-color: rgba(209, 73, 123, 0.2);
+    }
+
+    .lab-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+
+    .lab-number {
+      color: var(--primary-color);
+      font-weight: 700;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .lab-title {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .lab-desc {
+      color: var(--text-muted);
+      font-size: 15px;
+    }
+
+    .tags {
+      display: flex;
+      gap: 8px;
+      margin-top: 16px;
+    }
+
+    .tag {
+      background: #f1f5f9;
+      color: var(--text-muted);
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 500;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 30px 0;
+      color: var(--text-muted);
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      .header {
+        padding: 40px 0 30px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+      }
+      .header h1 {
+        font-size: 28px;
+      }
+      .lab-link {
+        padding: 20px;
+      }
+      .lab-title {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header class="header">
+  <div class="container">
+    <div class="profile-badge">Дар'я Павлюк • КНУ</div>
+    <h1>Кросплатформне програмування</h1>
+    <p>Портфоліо лабораторних робіт</p>
+  </div>
+</header>
+
+<main class="container main">
+  <ul class="lab-list">
+    <li>
+      <!-- Посилання веде на вашу папку з першою роботою -->
+      <a class="lab-link" href="lab_1(2)/">
+        <div class="lab-header">
+          <span class="lab-number">Лабораторна робота №1.2</span>
+          <!-- Декоративна іконка стрілки -->
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#d1497b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </div>
+        <div class="lab-title">Основи кросплатформності</div>
+        <div class="lab-desc">Розробка адаптивного вебзастосунку. Проєкт: GlowBeauty (Онлайн-магазин косметики).</div>
+        <div class="tags">
+          <span class="tag">HTML5</span>
+          <span class="tag">CSS3</span>
+          <span class="tag">JavaScript</span>
+        </div>
+      </a>
+    </li>
+
+    <!-- Місце для наступних лабораторних робіт -->
+  </ul>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    &copy; 2026. Розроблено для курсу кросплатформного програмування.
+  </div>
+</footer>
+
+</body>
+</html>
