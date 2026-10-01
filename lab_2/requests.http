@@ -1,0 +1,44 @@
+### Перевірити, що сервер працює
+GET http://localhost:3000/
+
+### Отримати всі косметичні товари
+GET http://localhost:3000/api/cosmetics
+
+### Створити новий товар
+POST http://localhost:3000/api/cosmetics
+Content-Type: application/json
+
+{
+  "name": "Туш Lash Sensational",
+  "brand": "Maybelline",
+  "description": "Туш для об'єму та подовження вій",
+  "price": 399
+}
+
+### Отримати товар за id — замініть ID_ТОВАРУ на _id із відповіді POST
+GET http://localhost:3000/api/cosmetics/ID_ТОВАРУ
+
+### Оновити товар — замініть ID_ТОВАРУ на _id із відповіді POST
+PUT http://localhost:3000/api/cosmetics/ID_ТОВАРУ
+Content-Type: application/json
+
+{
+  "name": "Туш Lash Sensational Sky High",
+  "brand": "Maybelline",
+  "description": "Оновлений опис косметичного товару",
+  "price": 449
+}
+
+### Видалити товар — замініть ID_ТОВАРУ на _id із відповіді POST
+DELETE http://localhost:3000/api/cosmetics/ID_ТОВАРУ
+
+### Перевірка middleware: має повернути 400 Bad Request
+POST http://localhost:3000/api/cosmetics
+Content-Type: application/json
+
+{
+  "name": "",
+  "brand": "Test",
+  "description": "Test",
+  "price": 0
+}
