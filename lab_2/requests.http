@@ -15,11 +15,11 @@ Content-Type: application/json
   "price": 399
 }
 
-### Отримати товар за id — замініть ID_ТОВАРУ на _id із відповіді POST
-GET http://localhost:3000/api/cosmetics/ID_ТОВАРУ
+### Отримати товар за id
+GET http://localhost:3000/api/cosmetics/6abe3dd622a4467b5273af13
 
-### Оновити товар — замініть ID_ТОВАРУ на _id із відповіді POST
-PUT http://localhost:3000/api/cosmetics/ID_ТОВАРУ
+### Оновити товар
+PUT http://localhost:3000/api/cosmetics/6abe3dd622a4467b5273af13
 Content-Type: application/json
 
 {
@@ -29,8 +29,8 @@ Content-Type: application/json
   "price": 449
 }
 
-### Видалити товар — замініть ID_ТОВАРУ на _id із відповіді POST
-DELETE http://localhost:3000/api/cosmetics/ID_ТОВАРУ
+### Видалити товар
+DELETE http://localhost:3000/api/cosmetics/6abe3ede22a4467b5273af16
 
 ### Перевірка middleware: має повернути 400 Bad Request
 POST http://localhost:3000/api/cosmetics
