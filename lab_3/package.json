@@ -1,0 +1,32 @@
+{
+  "name": "kpp-pavliuk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "directories": {
+    "doc": "../docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Daria-Pavliuk/CPP-Pavliuk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Daria-Pavliuk/CPP-Pavliuk/issues"
+  },
+  "homepage": "https://github.com/Daria-Pavliuk/CPP-Pavliuk#readme",
+  "dependencies": {
+    "@apollo/server": "^5.5.1",
+    "bcryptjs": "^3.0.3",
+    "graphql": "^16.14.2",
+    "jsonwebtoken": "^9.0.3"
+  }
+}
