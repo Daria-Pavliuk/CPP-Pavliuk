@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlowBeauty Desktop — Wishlist</title>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'none'">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <h1>GlowBeauty Desktop</h1>
+        <p>Ваш десктопний б'юті-застосунок із збереженням Wishlist</p>
+    </div>
+</header>
+
+<main class="container main">
+    <!-- Опис застосунку -->
+    <section class="card">
+        <h2>Про застосунок</h2>
+        <p>
+            GlowBeauty — це сучасний онлайн-магазин для швидкого пошуку та замовлення декоративної і доглядової косметики.
+            Застосунок адаптований для роботи як на комп'ютерах, так і на мобільних пристроях.
+        </p>
+    </section>
+
+    <!-- Функції -->
+    <section class="card">
+        <h2>Основні функції</h2>
+        <ul class="features-list">
+            <li>Зручний пошук товарів за брендами та призначенням.</li>
+            <li>Формування особистого "Кошика бажань" (Wishlist).</li>
+            <li>Збереження Wishlist у JSON-файлі між запусками десктопного застосунку.</li>
+        </ul>
+    </section>
+
+    <!-- Інтерактивна секція: Додавання товару -->
+    <section class="card">
+        <h2>Додати товар у Wishlist</h2>
+        <input
+                type="text"
+                id="itemInput"
+                class="item-input"
+                placeholder="Наприклад: Туш для вій Maybelline"
+        >
+        <button id="addItemButton" class="button">
+            Додати товар
+        </button>
+        <p id="message" class="message"></p>
+    </section>
+
+    <!-- Список доданих товарів -->
+    <section class="card">
+        <h2>Ваш Wishlist</h2>
+        <ul id="itemsList" class="items-list"></ul>
+    </section>
+
+    <!-- Стек технологій -->
+    <section class="card">
+        <h2>Обраний стек технологій</h2>
+        <p>
+            Використано класичний підхід на базі вебтехнологій. Інтерфейс створено на HTML, CSS і JavaScript та запущено в окремому вікні Electron. Дані записуються на диск через захищений IPC-міст.
+        </p>
+        <table class="tech-table">
+            <thead>
+            <tr>
+                <th>Компонент</th>
+                <th>Технологія</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Структура сторінки</td>
+                <td>HTML</td>
+            </tr>
+            <tr>
+                <td>Стилізація та адаптивність</td>
+                <td>CSS</td>
+            </tr>
+            <tr>
+                <td>Логіка роботи кошика</td>
+                <td>JavaScript</td>
+            </tr>
+            <tr>
+                <td>Платформа запуску</td>
+                <td>Electron (Windows / macOS / Linux)</td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+</main>
+
+<footer class="footer">
+    <p>Лабораторна робота №6: GlowBeauty Desktop</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

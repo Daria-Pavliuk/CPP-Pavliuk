@@ -1,0 +1,13 @@
+{
+  "name": "glowbeauty-desktop",
+  "version": "1.0.0",
+  "description": "GlowBeauty Wishlist desktop application for laboratory work 6",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "check": "node --check main.js && node --check preload.js && node --check renderer/script.js"
+  },
+  "devDependencies": {
+    "electron": "^38.8.6"
+  }
+}
