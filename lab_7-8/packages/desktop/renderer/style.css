@@ -1,0 +1,253 @@
+
+/* style.css */
+/* Оформлення веб-клієнта GlowBeauty */
+
+:root {
+    --pink: #d85a8a;
+    --pink-dark: #b83e70;
+    --pink-light: #fff0f5;
+    --background: #fff8fa;
+    --text: #432839;
+    --muted: #947987;
+    --border: #f1dce5;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: var(--background);
+    color: var(--text);
+}
+
+/* Шапка сайту */
+.header {
+    background: linear-gradient(135deg, #fff0f5, #f8d5e3);
+    text-align: center;
+    padding: 45px 20px;
+    border-bottom: 1px solid var(--border);
+}
+
+.brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.brand h1 {
+    margin: 0;
+    font-size: 42px;
+    letter-spacing: 1px;
+    color: var(--pink-dark);
+}
+
+.brand-icon {
+    font-size: 36px;
+    color: var(--pink);
+}
+
+.subtitle {
+    margin: 12px 0;
+    font-size: 17px;
+    font-style: italic;
+    color: var(--pink-dark);
+}
+
+.description {
+    color: var(--muted);
+    font-size: 15px;
+}
+
+/* Основний контейнер */
+.container {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 28px;
+    margin-bottom: 25px;
+    box-shadow: 0 8px 25px rgba(120, 50, 80, 0.06);
+}
+
+.section-heading {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.section-heading h2 {
+    margin: 0;
+    font-size: 23px;
+    color: var(--text);
+}
+
+.section-icon {
+    font-size: 25px;
+}
+
+.hint {
+    color: var(--muted);
+    font-size: 14px;
+    margin-bottom: 22px;
+}
+
+/* Форма */
+.form-group {
+    display: flex;
+    gap: 12px;
+}
+
+.product-input {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    font-size: 15px;
+    background: #fffafb;
+    outline: none;
+}
+
+.product-input:focus {
+    border-color: var(--pink);
+    box-shadow: 0 0 0 3px rgba(216, 90, 138, 0.1);
+}
+
+.button {
+    padding: 14px 22px;
+    border: none;
+    border-radius: 10px;
+    background: var(--pink);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.button:hover {
+    background: var(--pink-dark);
+}
+
+/* Повідомлення */
+.message {
+    min-height: 20px;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.message.error {
+    color: #dc3545;
+}
+
+.message.success {
+    color: #218c54;
+}
+
+/* Пошук */
+.search-input {
+    margin-bottom: 20px;
+}
+
+/* Список декоративної косметики */
+.products-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.product-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 18px;
+    margin-bottom: 12px;
+    background: #fff8fa;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+}
+
+/* Назва та дата товару */
+.product-content {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    min-width: 0;
+}
+
+.product-name {
+    font-size: 16px;
+    font-weight: 600;
+    overflow-wrap: anywhere;
+}
+
+.product-date {
+    font-size: 12px;
+    color: var(--muted);
+}
+
+/* Видалення товару */
+.delete-button {
+    padding: 9px 15px;
+    border: 1px solid #f3b5c8;
+    border-radius: 8px;
+    background: white;
+    color: #c74470;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background: #ffe7ef;
+}
+
+/* Порожній список */
+.empty-message {
+    text-align: center;
+    color: var(--muted);
+    font-size: 14px;
+    padding: 25px 10px;
+}
+
+/* Нижня частина сторінки */
+.footer {
+    text-align: center;
+    padding: 25px 15px;
+    color: var(--muted);
+    font-size: 12px;
+}
+
+/* Адаптація під мобільні екрани */
+@media (max-width: 600px) {
+    .brand h1 {
+        font-size: 32px;
+    }
+
+    .container {
+        margin: 20px auto;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .form-group {
+        flex-direction: column;
+    }
+
+    .button {
+        width: 100%;
+    }
+
+    .product-item {
+        align-items: flex-start;
+    }
+}

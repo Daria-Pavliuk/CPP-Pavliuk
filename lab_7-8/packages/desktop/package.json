@@ -1,0 +1,19 @@
+
+{
+  "name": "glowbeauty-monorepo-desktop",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Десктопний клієнт GlowBeauty на Electron: спільне ядро та файловий адаптер",
+  "type": "module",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "@glowbeauty/core": "*"
+  },
+  "devDependencies": {
+    "electron": "^44.0.0"
+  }
+}

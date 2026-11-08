@@ -1,0 +1,15 @@
+
+{
+  "name": "glowbeauty-web",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Веб-клієнт GlowBeauty: спільне ядро та адаптер localStorage",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "@glowbeauty/core": "*"
+  }
+}

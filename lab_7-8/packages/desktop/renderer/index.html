@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+            http-equiv="Content-Security-Policy"
+            content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'"
+    >
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GlowBeauty Desktop | Декоративна косметика</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="brand">
+        <span class="brand-icon">✦</span>
+        <h1>GlowBeauty</h1>
+    </div>
+
+    <p class="subtitle">
+        Your beauty, your glow
+    </p>
+
+    <p class="description">
+        Десктопна версія застосунку декоративної косметики
+    </p>
+</header>
+
+<main class="container">
+
+    <section class="card">
+        <div class="section-heading">
+            <span class="section-icon">💄</span>
+            <h2>Додати косметичний засіб</h2>
+        </div>
+
+        <p class="hint">
+            Додайте улюблену декоративну косметику до списку
+        </p>
+
+        <div class="form-group">
+            <input
+                    type="text"
+                    id="productInput"
+                    class="product-input"
+                    placeholder="Наприклад, матова помада"
+            >
+
+            <button id="addProductButton" class="button">
+                + Додати товар
+            </button>
+        </div>
+
+        <p id="message" class="message" aria-live="polite"></p>
+    </section>
+
+    <section class="card">
+        <div class="section-heading">
+            <span class="section-icon">✨</span>
+            <h2>Моя декоративна косметика</h2>
+        </div>
+
+        <p class="hint">
+            Переглядайте та знаходьте улюблені засоби
+        </p>
+
+        <input
+                type="search"
+                id="searchInput"
+                class="product-input search-input"
+                placeholder="Пошук косметичних засобів..."
+        >
+
+        <ul id="productsList" class="products-list"></ul>
+
+        <p id="emptyMessage" class="empty-message">
+            Список поки порожній. Додайте свій перший товар!
+        </p>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <p>© GlowBeauty — декоративна косметика</p>
+    <p>Десктопний застосунок на Electron</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
